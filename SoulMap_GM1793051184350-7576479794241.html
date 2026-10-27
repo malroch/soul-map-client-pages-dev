@@ -1,0 +1,818 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Strategic Soul Map | GeminiMasters </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta name="description" content="Your personalized Strategic Soul Map — Western Astrology, Human Design, Vedic Astrology, BaZi, and Numerology synthesized in the Master's Voice." />
+
+  <link href="https://fonts.gstatic.com" rel="preconnect"/>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root { color-scheme: dark; }
+    .gm-bg-overlay { position: absolute; inset: 0; background-image: linear-gradient(to bottom, #3b407f, #492b5f, #1f2032); opacity: .35; pointer-events: none; }
+    .prose p { margin-bottom: 1em; }
+    .accent { color: #D4AF37; } /* accent color for section headers/cards */
+    header, section { position: relative; z-index: 0; }
+    .gm-bg-overlay { position: absolute; inset: 0; z-index: -1; opacity: .35; }
+
+   /* center the two columns under the section title */
+   .gm-center { max-width: 1060px; margin-left: auto; margin-right: auto; }
+   .gm-cols { display: grid; grid-template-columns: 1fr; gap: 2.5rem 3.5rem; }
+   @media (min-width: 768px){
+     .gm-cols { grid-template-columns: repeat(2, minmax(0,1fr)); }
+     /* pull the columns inward toward the center line */
+     .gm-cols > *:nth-child(odd){ justify-self: end; padding-right: 1.5rem; }
+     .gm-cols > *:nth-child(even){ justify-self: start; padding-left: 1.5rem; }
+   }
+  </style>
+  <style>
+    :root {
+      --gm-gold: #D6B370; /* your gold */
+    }  
+    .gm-gold { color: var(--gm-gold); }
+
+    /* badges/chips used in foundations + per-system headers */
+    .gm-chip{
+      font-size: .9rem;
+      border-radius: 1rem;
+      padding: .25rem .6rem;
+      background: rgba(17,17,17,.55);
+      border: 1px solid #3f3f46; /* neutral-700 */
+      line-height: 1.25rem;
+    }
+
+    /* optional: bump body contrast slightly on darker monitors */
+    .gm-body { color: #D1D5DB; } /* ~gray-300 */
+  </style>
+</head>
+<body class="antialiased bg-neutral-950 text-white font-[Inter]">
+
+<header class="relative py-12 px-4 bg-gradient-to-br from-neutral-800 to-neutral-900">
+  <div class="gm-bg-overlay"></div>
+
+  <!-- Centered Logo -->
+  <div class="relative max-w-6xl mx-auto text-center">
+    <img src="assets/logo.png" alt="GeminiMasters Logo"
+         class="mx-auto h-20 md:h-28 opacity-95 hover:opacity-100 transition-opacity duration-200"/>
+  </div>
+
+  <!-- Visible Page Title + Subtitle -->
+  <div class="relative max-w-5xl mx-auto text-center mt-8">
+    <h1 class="text-5xl md:text-7xl leading-tight pb-2 font-medium text-transparent bg-clip-text
+               bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-600 mb-4">
+      Strategic Soul Map
+    </h1>
+    <p class="text-xl md:text-2xl leading-relaxed text-gray-200">
+      A unified reading in The Master's Voice – Western Astrology, Human Design, Vedic Astrology, BaZi, and Numerology aligned into one, coherent and personalised map.
+      Not a forecast. A rediscovery of the cosmic design that has always been yours.
+    </p>
+
+    
+  </div>
+</header>
+
+<!-- Mystic Divider -->
+<section class="py-10 px-4 bg-gradient-to-t from-neutral-950 to-neutral-800 text-center relative">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-xl mx-auto text-2xl text-gray-400 tracking-widest">☉ ☽ ♂ ♀ ♃ ♄ ♅ ♆ ♇ ⚝ ⟴</div>
+</section>
+
+<!-- Cosmic Foundations -->
+<section class="py-20 px-6 bg-gradient-to-b from-neutral-900 to-neutral-950 text-white relative gm-no-overlay">
+  <div class="gm-bg-overlay"></div>
+
+  <div class="relative mx-auto max-w-[750px]">
+    <h2 class="text-center text-5xl font-bold mb-10 accent">✦ Your Cosmic Foundations</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-9 justify-items-center text-left text-lg text-gray-200">
+      <!-- Western Astrology -->
+      <div class="w-full max-w-[600px]">
+        <h3 class="font-semibold accent mb-2">Western Astrology</h3>
+        <p>♈︎ Sun: <span class="gm-gold">Gemini</span></p>
+        <p>☽ Moon: <span class="gm-gold">Sagittarius</span></p>
+        <p>↑ Rising: <span class="gm-gold">Libra</span></p>
+        <p>⋄ Dominant Element: <span class="gm-gold">Air</span></p>
+        <p>⌂ House Emphasis: <span class="gm-gold">8</span></p>
+        <p>⚖︎ Modality: <span class="gm-gold">Mutable</span></p>
+
+        
+      </div>
+
+      <!-- Human Design -->
+      <div class="w-full max-w-[600px]">
+        <h3 class="font-semibold accent mb-2">Human Design</h3>
+        <p>✧ Type: <span class="gm-gold">Manifesting Generator</span></p>
+        <p>✦ Authority: <span class="gm-gold">Emotional</span></p>
+        <p>⚛ Profile: <span class="gm-gold">1/3</span></p>
+
+        
+	<p>☲ Gates &amp; Channels: <span class="gm-gold">2-14, 6-59, 10-20, 10-34, 20-34</span></p>
+	<p>☯ Centers Defined: <span class="gm-gold">G Center, Sacral, Solar Plexus, Throat</span></p>
+      </div>
+
+      <!-- Numerology -->
+      <div class="w-full max-w-[600px]">
+        <h3 class="font-semibold accent mb-2">Numerology</h3>
+
+        <p>
+          ★ Life Path:
+          <span class="gm-gold">5</span>
+          
+        </p>
+
+        <p>
+          ✦ Expression (Destiny):
+          <span class="gm-gold">8</span>
+          
+        </p>
+
+        <p>
+          ❤ Soul Urge:
+          <span class="gm-gold">33</span>
+          
+          
+        </p>
+
+        <p>
+          ✧ Personality:
+          <span class="gm-gold">11</span>
+          
+          
+        </p>
+
+        <p>
+          ◆ Birthday:
+          <span class="gm-gold">8</span>
+          
+        </p>
+
+        <p>
+          ▦ Maturity:
+          <span class="gm-gold">4</span>
+          
+        </p>
+
+        
+
+        
+        
+      </div>
+
+      <!-- Vedic Astrology -->
+	<div class="w-full max-w-[600px]">
+  	<h3 class="font-semibold accent mb-2">Vedic Astrology</h3>
+
+  	<p>↑ Ascendant: <span class="gm-gold">Virgo</span></p>
+  	<p>☽ Moon (Rāśi): <span class="gm-gold">Scorpio</span></p>
+
+  	<p>
+    	★ Nakshatra: <span class="gm-gold">Jyeshtha</span>
+    	 <span class="gm-gold">(Pada 2)</span>
+  	</p>
+
+  	<p>☉ Sun (Rāśi): <span class="gm-gold">Taurus</span></p>
+
+  	
+  	<p>
+    	⟡ Ayanamsa: <span class="gm-gold">Lahiri</span>
+    	 <span class="gm-gold">(23.461070390431153)</span>
+  	</p>
+  	
+
+  	<p>⚷ Dasha Period: <span class="gm-gold">Mars Mahadasha</span></p>
+	</div>
+
+      <!-- BaZi / Chinese Metaphysics -->
+      <div class="w-full md:col-span-2 max-w-[960px]">
+        <h3 class="font-semibold accent mb-2">BaZi / Chinese Metaphysics</h3>
+
+        <p>⛩ Day Master: <span class="gm-gold">Yang Wood</span></p>
+	
+ 	 
+  	<p>🜁 Elemental Balance:</p>
+  	<p class="leading-relaxed">
+    	
+      	<span class="gm-gold">Wood: 2</span>
+      	<span class="opacity-60"> • </span>
+    	
+      	<span class="gm-gold">Fire: 1</span>
+      	<span class="opacity-60"> • </span>
+    	
+      	<span class="gm-gold">Earth: 1</span>
+      	<span class="opacity-60"> • </span>
+    	
+      	<span class="gm-gold">Metal: 2</span>
+      	<span class="opacity-60"> • </span>
+    	
+      	<span class="gm-gold">Water: 2</span>
+      	
+    	
+  	</p>
+	
+        <p>🜂 Chinese Zodiac: <span class="gm-gold">Pig</span></p>
+
+        
+        
+
+        
+
+        
+          <p class="mt-3">⚛ Ten Gods: <span class="gm-gold">Direct Officer, Friend</span></p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mystic Divider -->
+<section class="py-10 px-4 bg-gradient-to-t from-neutral-950 to-neutral-800 text-center relative">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-xl mx-auto text-2xl text-gray-400 tracking-widest">☉ ☽ ♂ ♀ ♃ ♄ ♅ ♆ ♇ ⚝ ⟴</div>
+</section>
+
+<!-- ===== Western Astrology ===== -->
+<section class="relative py-20 px-4 bg-gradient-to-b from-neutral-800 to-neutral-950 text-center text-white">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 accent">♈︎ Western Astrology</h2>
+    <p class="text-sm md:text-base text-gray-300 italic leading-relaxed -mt-4 mb-6">
+   	Western astrology describes your lived personality and life themes — how your psyche expresses itself through archetype, relationship, and choice.
+	</p>
+
+        <!-- Foundation chips appear here -->
+    <div class="mt-3 flex flex-wrap justify-center gap-2">
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Sun:</span>
+      <span class="gm-gold ml-1">Gemini</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Moon:</span>
+      <span class="gm-gold ml-1">Sagittarius</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Rising:</span>
+      <span class="gm-gold ml-1">Libra</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Element:</span>
+      <span class="gm-gold ml-1">Air</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Houses:</span>
+      <span class="gm-gold ml-1">8</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Modality:</span>
+      <span class="gm-gold ml-1">Mutable</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Stellium:</span>
+      <span class="gm-gold ml-1">No major stellium</span>
+    </span>
+  
+</div>
+
+    
+      <div class="prose prose-invert max-w-none text-gray-200 leading-relaxed mt-6">You are a Gemini Sun with a Sagittarius Moon and Libra rising, carrying a strong emphasis in the 8th house and a dominant Air element. Your mutable modality lends flexibility and adaptability, while your Libra ascendant colors your approach with diplomacy and a keen sense of balance. The Gemini Sun drives your mind to gather information and communicate, but this is softened by Sagittarius Moon’s yearning for truth and expansive perspectives. Together with Libra rising, you come across as engaging, curious, and socially attuned, often seen as a connector between ideas and people. Your life feels like a steady flow of questions and discoveries, with a natural pull toward exploring both the surface and depths of experience.</div>
+    
+
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Purpose</h3>
+        <p class="text-gray-200">Your purpose centers on bridging thought and depth, helping others navigate transitions where knowledge meets mystery. You are here to embody balance between lightness and gravity, using your natural charm and intellect to bring understanding to complex emotional landscapes. The position of your Midheaven suggests your path involves leadership in realms that require negotiation between personal truth and collective needs, often in areas involving shared resources, healing, or uncovering hidden truths.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Current Life Challenge</h3>
+        <p class="text-gray-200">The tension arises from the 8th house focus, where vulnerability and transformation meet your intellectual and social nature. You likely encounter friction between wanting to keep things light and accessible, and the deeper, sometimes uncomfortable realities that demand emotional honesty and trust. This can create inner conflict where your mind resists being pulled into intense emotional territories, yet those experiences urge you toward profound change. At this stage, you might feel caught between maintaining harmony in relationships and the disruptive but necessary process of personal evolution.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Evolutionary Edge</h3>
+        <p class="text-gray-200">Growth asks you to embrace the unknown in emotional and psychological realms, stepping beyond the mental agility you rely on into the realm of deep feeling and transformation. The nodal axis, especially if touching mutable signs or the 8th house, calls you to move from curiosity and detachment into committed engagement with your own shadows and those of others. You are stretched to develop emotional resilience and to find your voice in matters that impact shared resources, intimacy, and power. This requires setting firm boundaries while allowing yourself to be changed by what you encounter.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Soul Gifts</h3>
+        <p class="text-gray-200">Your greatest gift lies in your ability to communicate ideas with clarity and grace while holding space for emotional depth. Your Air dominance gives you mental agility and a gift for seeing multiple perspectives, making you a natural mediator and storyteller. Others experience you as approachable and insightful, someone who can translate difficult subjects into accessible conversations. When aligned, you balance curiosity with compassion, making your interactions both stimulating and healing.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Karmic Patterns</h3>
+        <p class="text-gray-200">You are invited to examine cycles of shared power and control, particularly in close partnerships and financial entanglements. The emphasis on the 8th house suggests recurring themes around trust, loss, and regeneration. You may notice patterns where you oscillate between guarding your inner world and opening it to others, reflecting a soul wrestling with the balance of independence and interdependence. These patterns may reappear in your work and relationships, often linked to fears of vulnerability or the unconscious need to reclaim personal power.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Insights</h3>
+        
+          <p class="text-gray-200">You gain clarity by recognizing that your intellectual curiosity alone cannot carry you through every challenge. True mastery comes when you integrate mind and heart, allowing the lessons of the 8th house to soften your resistance to change. Challenges are initiations, not punishments. They are necessary cracks that let transformation in. When you stop striving to control outcomes and instead flow with the process of deep inner work, you begin to experience freedom beyond what your mind can grasp.</p>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ===== Human Design ===== -->
+<section class="relative py-16 px-4 bg-gradient-to-br from-neutral-800 to-neutral-900 text-center text-white">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 accent">✧ Human Design</h2>
+    <p class="text-sm md:text-base text-gray-300 italic leading-relaxed -mt-4 mb-6">
+  	 Human Design maps your energetic mechanics — how your system is built to make decisions, use energy, and move through life with less resistance.
+	</p>
+
+	<div class="mt-3 flex flex-wrap justify-center gap-2">
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Type:</span>
+      <span class="gm-gold ml-1">Manifesting Generator</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Authority:</span>
+      <span class="gm-gold ml-1">Emotional</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Profile:</span>
+      <span class="gm-gold ml-1">1/3</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Centers:</span>
+      <span class="gm-gold ml-1">G Center, Sacral, Solar Plexus, Throat</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Gates/Channels:</span>
+      <span class="gm-gold ml-1">2-14, 6-59, 10-20, 10-34, 20-34</span>
+    </span>
+  
+</div>
+
+
+    
+      <div class="prose prose-invert max-w-none text-gray-200 leading-relaxed mt-6">You are a Manifesting Generator with Emotional Authority, carrying the 1/3 Profile and the Right Angle Cross of Rulership 2. Your defined centers are the Throat, G, Sacral, and Solar Plexus, linking your energy and identity in a powerful, responsive flow. Your G Center gives you a clear sense of direction and self, while your Emotional Authority requires patience and emotional clarity before making decisions. As a 1/3, you are a natural investigator and experimenter, learning deeply from trial and error. The channels connecting your defined centers enable you to act quickly when you are emotionally aligned, making you a dynamic force when you wait to respond rather than initiate.</div>
+    
+
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Purpose</h3>
+        <p class="text-gray-200">You are here to embody leadership grounded in emotional wisdom and practical experience. Your purpose is to navigate life with a balance of responsive action and emotional clarity, showing others how to move through challenges without losing their sense of self. By embracing your trial-and-error process, you build a foundation of reliability and resilience that guides those around you. Your presence is a beacon of strength when you act from your truth, helping to bring order and direction to situations that need steady, informed rulership.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Current Life Challenge</h3>
+        <p class="text-gray-200">You are currently navigating the tension between your fast-moving energy and the need for emotional clarity before acting. It’s common for you to feel pressure to jump in or decide quickly, but this conflicts with your Emotional Authority, which demands time for feelings to settle. Your defined Sacral and Throat centers amplify your urge to respond immediately, which can lead to frustration when results don’t match your initial impulses. The 1/3 Profile can bring a persistent need to understand and fix what goes wrong, often causing you to be hard on yourself when experiments don’t yield success right away. Balancing your urge to act with emotional patience is your key challenge.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Evolutionary Edge</h3>
+        <p class="text-gray-200">Your growth lies in mastering the rhythm between response and emotional clarity. Life is stretching you to trust that waiting to respond is not hesitation but strategic alignment with your deepest truth. When you honor your Emotional Authority, you access an inner wave of clarity that transforms your natural speed into precision. This allows you to avoid the wasted energy of impulsive moves and instead harness your Manifesting Generator power effectively. Embracing the 1/3’s path of trial and error without self-judgment opens new doors of discovery and resilience, moving you toward leadership defined by emotional wisdom and practical experience.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Soul Gifts</h3>
+        <p class="text-gray-200">Your defined Throat, G, Sacral, and Solar Plexus centers create a powerful and consistent flow of energy and communication. You naturally draw others in with your responsive aura and clear sense of identity. Your Emotional Authority lends depth and nuance to your decisions, making your actions more thoughtful and impactful over time. The 1/3 Profile gifts you with a deep curiosity and a practical approach to learning, turning every experience into a valuable lesson. When you are aligned, others feel your grounded confidence and emotional transparency, which invites trust and cooperation. Your energy moves quickly but with purpose once your emotions have settled, making you a catalyst for change and growth.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Karmic Patterns</h3>
+        <p class="text-gray-200">You carry the karmic imprint of a seeker who learns through direct experience and often through the discomfort of failure or rejection. The openness outside your defined centers can amplify sensitivity to others’ expectations, causing you to second-guess your emotional process. The 1/3 Profile reflects a pattern of diving deep into knowledge but needing to test it in the field, which can repeat cycles of confidence followed by doubt. Your defined Emotional Solar Plexus means your emotional waves influence your decisions and relationships; when others expect quick yes-or-no answers, you may feel misunderstood or pressured. These patterns invite you to develop patience with your emotional timing and to be gentle with yourself amid setbacks.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Insights</h3>
+        
+          <p class="text-gray-200">You are not meant to act on impulse but to wait for what life shows you through clear emotional signals. Your energy is immense, but it must be directed from a place of emotional clarity to avoid burnout or frustration. Letting your feelings unfold fully before committing is a strength, not a limitation, and it brings you into alignment with your true path. The investigative nature of your 1/3 Profile is a gift that turns every mistake into a stepping stone for wisdom. Accept that learning through trial is your way forward, and each experience adds to your foundation of knowledge and resilience.
+
+Your defined G Center anchors your sense of self and direction, so trust that even in uncertainty, your identity is stable and reliable. When you align your actions with your emotional truth and wait to respond authentically, you become a ruler in your own life, commanding your energy with clarity and purpose. This is the path that leads to mastery and fulfillment.</p>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ===== Vedic Astrology ===== -->
+<section class="relative py-20 px-6 bg-gradient-to-br from-neutral-800 to-neutral-900 text-center text-white">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 accent">ॐ Vedic Astrology</h2>
+    <p class="text-sm md:text-base text-gray-300 italic leading-relaxed -mt-4 mb-6">
+  	Vedic astrology reveals your karmic blueprint and life timing — showing what ripens beneath the Western chart through dharma, karma, and dasha cycles.
+	</p>
+
+	<div class="mt-3 flex flex-wrap justify-center gap-2">
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Asc:</span>
+      <span class="gm-gold ml-1">Virgo</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Moon:</span>
+      <span class="gm-gold ml-1">Scorpio · Jyeshtha (Pada 2)</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Sun:</span>
+      <span class="gm-gold ml-1">Taurus</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Ayanamsa:</span>
+      <span class="gm-gold ml-1">Lahiri</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Dasha:</span>
+      <span class="gm-gold ml-1">Mars Mahadasha</span>
+    </span>
+  
+</div>
+
+    
+      <div class="prose prose-invert max-w-none text-gray-200 leading-relaxed mt-6">In the sidereal (Vedic) lens, the same soul expresses through a Virgo Ascendant, Scorpio Moon in Jyeshtha (Pada 2), and a Taurus Sun — revealing how karmic patterns and timing operate beneath the Western chart. Your Virgo Ascendant gives you a precise, analytical approach to life, with a natural focus on service and improving the environment around you. The Scorpio Moon in Jyeshtha Nakshatra deepens your emotional intensity and resilience, anchored by a fierce loyalty and the capacity to navigate complex inner landscapes. The Taurus Sun grounds your identity in stability and material security, but with a patient, steady will that values tangible results and sensual experience.
+
+This soul carries a strong emphasis in the 3rd, 5th, and 9th houses, shaping a narrative of courageous communication and learning (3rd house), dynamic creativity and personal power (5th house), and higher wisdom or philosophical frameworks (9th house). Jupiter and Moon together in your 3rd house suggest your mind and emotions are tightly linked to your need for meaningful connection and expression, while Mars and Rahu in the 5th heighten your drive to create impact and take risks in personal or professional arenas. The cluster of Mercury, Saturn, Sun, and Venus in the 9th signals a karmic call toward disciplined learning, teaching, and embodying values that stretch beyond immediate concerns.</div>
+    
+
+    
+
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Purpose</h3>
+        <p class="text-gray-200">Your dharma is to serve as a bridge between practical wisdom and transformative insight. Virgo Ascendant’s drive to heal and improve meets the Scorpio Moon’s capacity to delve beneath surface appearances, while Taurus Sun’s steady presence ensures that your contributions are grounded and tangible. You are called to empower others through communication, teaching, and creative leadership, rooted in ethical clarity and real-world results.
+
+The cluster in the 9th house suggests a life mission involving higher learning or spiritual philosophy expressed through disciplined effort. Service here is not abstract but concrete: guiding others to find stability amid change, and to act with courage and integrity. Your right use of power comes through mastering your own inner conflicts and embodying a balanced, mature presence in public and private spheres.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Current Life Challenge</h3>
+        <p class="text-gray-200">The current Mars Mahadasha activates your 5th house of personal power and creativity, intensifying challenges around taking decisive action without losing sight of long-term consequences. Mars here demands that you confront fears of failure or loss that may have held you back in the past. Your Scorpio Moon’s deep emotional nature can feel at odds with this fiery energy, creating inner tension between control and release. The presence of Rahu in the 5th house also stirs a restless ambition that can push you toward risky endeavors or unconventional paths that test your boundaries.
+
+At the same time, the 9th house cluster urges you to integrate discipline with expansion, balancing your drive for immediate results with the need for philosophical grounding and ethical clarity. The transition ahead into Rahu Mahadasha will magnify themes around identity and ambition but also expose patterns that need conscious recalibration now, during Mars’s influence.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Evolutionary Edge</h3>
+        <p class="text-gray-200">You are being stretched to master the tension between detailed practical work and bold creative breakthroughs. Virgo Ascendant’s urge for perfection and order can clash with the unpredictable force of Mars in the 5th, demanding you learn when to push forward and when to step back. Emotional maturity comes through embracing Scorpio Moon’s depth without being overwhelmed by it, using that intensity as a resource rather than a burden.
+
+Your dharma calls for disciplined engagement with knowledge and teaching, as reflected by the 9th house emphasis. This requires you to step beyond comfort zones, taking responsibility for your ideas and their impact. Life asks you not only to innovate but also to ground your ambitions in service and ethical frameworks. The challenge is to hold both the fire of Mars and the patience of Taurus Sun in creative tension.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Soul Gifts</h3>
+        <p class="text-gray-200">Your mind is sharp and discerning, honed by Virgo Ascendant’s analytical nature and Mercury’s placement in the 9th house, lending you a natural teacher’s gift. Emotional resilience and depth come from the Scorpio Moon in Jyeshtha, granting you the ability to endure hardship and regenerate. The Taurus Sun provides steadiness, patience, and a strong work ethic.
+
+Jupiter’s presence alongside the Moon supports intuitive wisdom and optimism in your communications, while Venus in the 9th enriches your sense of beauty, harmony, and relational diplomacy. Mars in the 5th fuels courage and boldness in creative ventures. Together, these placements give you a blend of intellectual rigor, emotional power, and practical endurance.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ===== BaZi ===== -->
+<section class="relative py-16 px-4 bg-gradient-to-br from-neutral-800 to-neutral-900 text-center text-white">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 accent">阴 BaZi / Chinese Metaphysics</h2>
+    <p class="text-sm md:text-base text-gray-300 italic leading-relaxed -mt-4 mb-6">
+  	 BaZi reveals your elemental constitution and life cycles — showing how resources, pressure, and timing interact so you can work with the seasons of your fate.
+	</p>
+	
+
+	
+	
+  	
+    	
+    	
+      	
+      	
+      	
+    	
+  	
+    	
+    	
+      	
+      	
+      	
+    	
+  	
+    	
+    	
+      	
+      	
+      	
+    	
+  	
+    	
+    	
+      	
+      	
+      	
+    	
+  	
+    	
+    	
+      	
+      	
+      	
+    	
+  	
+	
+
+	
+  	<div class="mt-3 flex flex-wrap justify-center gap-2">
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Day Master:</span>
+      <span class="gm-gold ml-1">Yang Wood</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Zodiac:</span>
+      <span class="gm-gold ml-1">Pig</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Ten Gods:</span>
+      <span class="gm-gold ml-1">Direct Officer, Friend</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Elemental Balance:</span>
+      <span class="gm-gold ml-1">Wood:2, Fire:1, Earth:1, Metal:2, Water:2</span>
+    </span>
+  
+</div>
+	
+
+    
+      <div class="prose prose-invert max-w-none text-gray-200 leading-relaxed mt-6">You are a Yang Wood Day Master, defined by strength and growth, like a sturdy tree reaching upward and outward. Your Four Pillars—XinHai in the year, JiaWu in the month, JiaZi for the day, and XinWei at the hour—create a unique interplay of energies that shape your experience. Strongly present elements include Wood, Metal, and Water, each contributing equally to your nature. Fire and Earth appear less often, adding subtle background tones rather than driving forces.
+
+This balance means you carry a dynamic tension between growth (Wood), clarity and structure (Metal), and adaptability (Water). Wood, your core element, pushes you to expand and create, while Metal brings precision, discipline, and sometimes resistance that you must navigate. Water adds flexibility and emotional depth, giving you a capacity to adjust and reflect. In life, this manifests as a continuous balancing act between pushing forward, holding firm to principles, and flowing with change.</div>
+    
+
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Purpose</h3>
+        <p class="text-gray-200">You carry a presence that commands respect through quiet strength and steady growth. Your purpose unfolds in roles that require both leadership and collaboration, where you balance innovation with discipline. Your Yang Wood nature calls you to build and expand, while the Metal and Water in your chart ask you to shape ideas with clarity and adapt fluidly to changing circumstances.
+
+You are meant to contribute by bringing structure to growth processes—whether in teams, projects, or community—without losing sight of the flow beneath. Your ability to hold space for both firmness and openness allows you to lead with integrity and resilience. This contribution is subtle but deeply powerful when you trust your capacity to navigate complexity.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Current Life Challenge</h3>
+        <p class="text-gray-200">Your current challenge comes from the competing demands of Metal and Wood energies, which naturally oppose each other in the BaZi cycle. Metal cuts and shapes Wood, creating pressure on your identity and sense of growth. The presence of Direct Officer stems in your year and hour pillars signals external expectations and authority pressures that demand discipline and responsibility. Meanwhile, the Friend elements in your month and day pillars suggest a reliance on peers and a need for mutual support, but also potential conflicts in trust or competition.
+
+This tension can feel like you are pulled between asserting your own path and conforming to external rules or standards. Water’s presence softens this but also adds emotional complexity, so you might find yourself questioning when to push, when to yield, and how to maintain integrity under pressure. The lack of strong Fire and Earth means you may struggle with sustaining energy or grounding your efforts consistently.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Evolutionary Edge</h3>
+        <p class="text-gray-200">You are invited to cultivate the less emphasized elements—Fire and Earth—to bring more stability and sustained motivation into your life. Fire can fuel your inner drive and inspire enthusiasm, while Earth provides grounding and patience. Developing these qualities will help you balance the sharp edges of Metal’s control and Wood’s constant growth.
+
+Practically, this means creating routines or practices that build endurance and steady progress rather than rapid bursts. Find ways to honor your need for structure without letting it stifle your growth. Allow your emotions and intuition (Water) to inform but not overwhelm decisions. Learning to soften the sharpness of Metal through Fire’s warmth and Earth’s steadiness will mature your approach to challenges.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Soul Gifts</h3>
+        <p class="text-gray-200">Your greatest gifts arise from the synergy of your Day Master and elemental pattern. As Yang Wood, you bring natural strength, vision, and endurance. The strong Metal presence sharpens your mind, giving you a clear sense of justice and the ability to organize and execute plans with precision. Water enhances your intuition and emotional intelligence, allowing you to read situations with depth and respond with adaptability.
+
+The presence of Direct Officer and Friend Ten Gods means you can embody both authority and camaraderie. You can hold roles of responsibility and yet remain approachable and trustworthy. This combination supports leadership that is firm but fair, ambitious but collegial.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Karmic Patterns</h3>
+        <p class="text-gray-200">Repeated cycles in your chart indicate a pattern of navigating authority and peer relationships with complexity. The Direct Officer roles suggest you often face expectations to conform or perform within hierarchical systems, which can feel restrictive yet necessary. The Friend roles highlight recurring themes of collaboration but also rivalry or blurred boundaries with those close to you.
+
+This soul tends to test limits between independence and interdependence, sometimes overextending to prove capability or loyalty. This pattern plays out in work and personal life, where responsibility and trust are central issues. Health rhythms might reflect this tension through fluctuations in energy or stress-related symptoms tied to the struggle between pushing forward and stepping back.</p>
+      </div>
+      
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Insights</h3>
+        
+          <p class="text-gray-200">Your elemental balance is not a flaw but a precise training ground. The equal presence of Wood, Metal, and Water means you are designed to live with complexity and contradiction. It is natural for you to experience tension and conflict as part of growth, not as a sign of failure. The less emphasized Fire and Earth are not weaknesses but invitations to develop new strengths that complement your core.
+
+This chart encourages you to recognize that control and flexibility coexist within you. You don’t have to choose one over the other permanently. Instead, your challenge is to learn the timing and measure of each response. Accepting this dynamic inner landscape frees you from self-judgment and opens a space for wiser self-management.</p>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ===== Numerology ===== -->
+<section class="relative py-16 px-4 bg-gradient-to-br from-neutral-800 to-neutral-900 text-center text-white">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 accent">★ Numerology</h2>
+    <p class="text-sm md:text-base text-gray-300 italic leading-relaxed -mt-4 mb-6">
+  	 Numerology translates your soul’s frequency into a life path — clarifying your core drives, lessons, and the kind of impact you’re here to mature into.
+	</p>
+
+    <div class="mt-3 flex flex-wrap justify-center gap-2">
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Life Path:</span>
+      <span class="gm-gold ml-1">5</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Expression:</span>
+      <span class="gm-gold ml-1">8</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Soul Urge:</span>
+      <span class="gm-gold ml-1">33</span>
+    </span>
+  
+    <span class="gm-chip">
+      <span class="opacity-70">Personality:</span>
+      <span class="gm-gold ml-1">11</span>
+    </span>
+  
+</div>
+
+        
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="prose prose-invert max-w-none text-gray-200 leading-relaxed mt-6">
+        You carry a Life Path 5 with a Soul Urge 33, Expression 8, Personality 11, and a Birthday number 8. Your Maturity number is 4, completing a sequence from Master Teacher through Power and Adventure toward grounded building. This blend shows up as a restless energy moving toward mastery, with a sharp drive to influence and teach, tempered by a need for stability and structure deep in your later years.
+
+You tend to thrive when life offers variety and freedom, but you also hold an inner call to wield authority and create lasting impact. Your Personality 11 adds a layer of sensitivity and illumination, making you naturally tuned to deeper truths even as you navigate a fast-paced, ever-changing world. Your challenge often lies in balancing the urge to explore with your power to build something enduring.
+
+This soul can feel pulled between the desire for rapid change and the steady work of constructing solid foundations. You may find yourself drawn to dynamic environments yet seeking meaning through purposeful leadership and teaching.
+      </div>
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Purpose</h3>
+        <p class="text-gray-200">Your mission centers on transforming experience into wisdom that uplifts others. The Life Path 5 calls you to explore and gather knowledge, while the Expression 8 charges you with shaping that knowledge into tangible power. Combined with the Master Teacher 33, your purpose is to lead by example, inspiring growth through both action and teaching.
+
+You are here to show how freedom and responsibility can coexist, proving that true power arises from integrity and service. Your work likely involves guiding others through change, helping them find courage and structure in uncertainty.
+
+Ultimately, your deeper calling is to build something meaningful that lasts beyond immediate adventure.</p>
+      </div>
+      
+
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Current Life Challenge</h3>
+        <p class="text-gray-200">The tension between your adventurous Life Path 5 and the grounded Maturity 4 creates a pressing challenge now: how to channel restless energy into consistent, disciplined effort. Your Expression 8 demands authority and tangible results, but impatience can disrupt progress.
+
+You may struggle with focusing long enough to build the structures necessary for your larger goals or with feeling confined when routine feels like a cage. The current challenge asks you to integrate your urge for freedom with the responsibility to follow through on commitments.</p>
+      </div>
+      
+
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Evolutionary Edge</h3>
+        <p class="text-gray-200">You are invited to evolve by mastering the power of restraint without losing your spark for adventure. This means cultivating patience and learning when to slow down rather than rushing forward. The true growth lies in combining your Soul Urge 33’s impulse to teach and uplift with the Expression 8’s drive for material success.
+
+You step into higher expression by recognizing that influence grows from integrity and steady presence, not just charisma or speed. The strength to build and sustain comes from honoring your inner builder, the Maturity 4, even as you embrace risk and innovation.</p>
+      </div>
+      
+
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Soul Gifts</h3>
+        <p class="text-gray-200">You naturally carry a bold curiosity that propels you into new experiences. This restlessness brings fresh ideas and adaptability, making you a quick learner and an engaging communicator. Your Expression and Birthday number 8 provide a strong sense of authority and the ability to manifest goals efficiently.
+
+Your Personality 11 adds sensitivity and insight, allowing you to read beneath the surface and inspire others with clarity. This combination means you can lead with both head and heart, balancing drive with empathy.
+
+In daily life, your gifts show as an energetic presence who can motivate teams, innovate solutions, and teach through lived example. You have a knack for turning challenges into stepping stones when you trust your inner guidance.</p>
+      </div>
+      
+
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Karmic Patterns</h3>
+        <p class="text-gray-200">Recurring themes suggest a karmic pattern around balancing authority and service. The double 8 in your chart signals lessons about power—how to wield it without domination or burnout. The Master Teacher 33 asks you to transcend personal ambition and align your influence with greater purpose.
+
+You might find yourself repeatedly tested on your ability to lead with compassion, or facing situations where impatience challenges your long-term vision. These patterns invite you to move beyond old habits of control toward empowered stewardship.</p>
+      </div>
+      
+
+      
+      <div class="rounded-2xl border border-neutral-800 p-5 bg-neutral-900/60">
+        <h3 class="text-xl font-semibold mb-2 accent">Sacred Insights</h3>
+        
+          <p class="text-gray-200">Your nature is complex but clear: you are a dynamic force meant to teach through example, wielding power that serves rather than consumes. The 33 Soul Urge is rare and demanding—it asks you to hold high standards for both yourself and others while remaining deeply compassionate.
+
+Understanding that your restlessness is part of your design helps reduce self-judgment when you resist routine. Your Personality 11’s illumination shines brightest when you accept vulnerability as a source of strength. You are not meant to do everything alone; your power grows in connection and steady effort.
+
+The path you walk is not about perfect control but about mastering flow—knowing when to leap and when to build patiently.</p>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Mystic Divider -->
+<section class="py-10 px-4 bg-gradient-to-t from-neutral-950 to-neutral-800 text-center relative">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-xl mx-auto text-2xl text-gray-400 tracking-widest">☉ ☽ ♂ ♀ ♃ ♄ ♅ ♆ ♇ ⚝ ⟴</div>
+</section>
+
+
+<!-- Integration & Reflection -->
+<section class="py-20 px-6 bg-neutral-900 text-white relative">
+  <div class="gm-bg-overlay"></div>
+  <div class="relative max-w-3xl mx-auto text-center">
+    <h2 class="text-5xl font-bold mb-6 accent">☉ Integration &amp; Reflection</h2>
+
+    
+    
+      <div class="prose prose-invert max-w-none text-gray-200 leading-relaxed mb-10 text-left">
+        You are a dynamic presence shaped by a restless intellect and deep emotional currents, a Manifesting Generator with Gemini Sun, Sagittarius Moon, and Libra rising highlighting your agility, curiosity, and natural diplomacy. Your soul carries the tension of balancing lightness with depth, always moving between gathering knowledge and diving into transformative experiences around power, trust, and intimacy. Repeated karmic lessons call you to navigate authority and collaboration, often in relationships and shared resources, where vulnerability and control intersect. Your gifts lie in clear, compelling communication infused with emotional insight, enabling you to connect others to complex truths with both clarity and compassion. You embody a blend of sharp mental agility, resilient emotional depth, and a steady drive to build and lead in ways that serve a greater purpose.
+
+Now you are called to integrate patience with your impulse for action, learning to wait for emotional clarity before committing your powerful energy. Your current challenge is to master the rhythm between responding quickly and grounding your efforts in steady, deliberate progress—balancing your need for freedom with the discipline required to create lasting impact. Growth unfolds as you release old fears of loss and control, allowing your deeper feelings to soften resistance and open space for transformation. This season asks you to trust that true power emerges through consistent presence, compassionate leadership, and embracing the full complexity of your inner landscape. The path ahead requires you to move beyond impulsive leaps toward a mature stewardship that honors both your adventurous spirit and your call to build something meaningful.
+      </div>
+    
+
+    
+    
+  </div>
+</section>
+
+<!-- Footer -->
+<section class="py-12 px-6 bg-gradient-to-t from-neutral-950 to-neutral-900 text-center">
+  <div class="gm-bg-overlay"></div>
+  <div class="text-gray-400 text-xl italic tracking-wider">
+    “The universe is not outside of you. Look inside yourself; everything that you want, you already are.”
+    <br/><span class="block text-sm mt-4">— Rumi</span>
+  </div>
+  <div class="text-sm text-gray-600 mt-6">This Strategic Soul Map represents your baseline cosmic architecture. Daily and seasonal readings build upon this foundation. — The Masters</div>
+</section>
+
+</body>
+</html>
